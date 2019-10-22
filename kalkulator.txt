@@ -1,0 +1,21 @@
+﻿
+﻿
+
+const TRESHOLD=2000
+const PHONE_PRICE = 700
+const ACC_PRICE=70
+function foo(price){
+    return price + (price*100)/100
+}
+let price=0;
+b=prompt("HOW MUCH MONEY DO YOU HAVE");
+while(price<b){
+    price+=foo(PHONE_PRICE);
+    if(price<TRESHOLD){
+        price+=foo(ACC_PRICE)
+    }
+}
+function dollars(price){
+    return "$"*(price)
+    console.log(dollars(price));
+}
